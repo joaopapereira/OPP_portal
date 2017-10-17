@@ -9,4 +9,10 @@ RUN echo "deb http://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.
 RUN curl -sL https://deb.nodesource.com/setup_8.x | bash -
 RUN apt install -y nodejs yarn
 
+RUN gem install foreman
+
+# Expose application port
 EXPOSE 3000
+
+# Expose API port
+EXPOSE 3001
