@@ -1,0 +1,1 @@
+$current_path =  ((pwd).path -replace '\\', '/') ; docker run -p 3000:3000 -it --rm -v ${current_path}:/portal opp-portal bash
